@@ -11,6 +11,11 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        date: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
+        },
         text: {
             type: DataTypes.STRING,
             allowNull: false,

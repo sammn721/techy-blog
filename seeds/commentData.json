@@ -1,0 +1,26 @@
+[
+    {
+        "text": "I agree",
+        "post_id": 1
+    },
+    {
+        "text": "I disagree",
+        "post_id": 1
+    },
+    {
+        "text": "The Earth is FAT*",
+        "post_id": 2
+    },
+    {
+        "text": "😭",
+        "post_id": 2
+    },
+    {
+        "text": "The Earth is PHAT*",
+        "post_id": 2
+    },
+    {
+        "text": "No comment.",
+        "post_id": 3
+    } 
+]

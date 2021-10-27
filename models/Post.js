@@ -11,11 +11,16 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    contents: {
+    text: {
       type: DataTypes.STRING,
     },
     user_id: {
