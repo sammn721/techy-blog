@@ -1,15 +1,19 @@
 [
   {
+    "id": 1,
+    "name": "Space Man Badman",
+    "email": "badguyspaceguy@aol.com",
+    "password": "password"
+  },
+  {
+    "id": 2,
     "name": "Sam",
-    "email": "sam@mail.com",
+    "email": "s@m.com",
     "password": "password"
+
   },
   {
-    "name": "Sarah",
-    "email": "sar@h.com",
-    "password": "password"
-  },
-  {
+    "id": 3,
     "name": "Jim",
     "email": "jimmy@james.jim",
     "password": "password"

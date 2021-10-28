@@ -1,26 +1,44 @@
 [
     {
+        "id": 1,
         "text": "I agree",
+        "user_id": 2,
         "post_id": 1
     },
     {
+        "id": 2,
         "text": "I disagree",
+        "user_id": 3,
         "post_id": 1
     },
     {
+        "id": 3,
         "text": "The Earth is FAT*",
+        "user_id": 1,
         "post_id": 2
     },
     {
+        "id": 4,
         "text": "😭",
+        "user_id": 2,
         "post_id": 2
     },
     {
-        "text": "The Earth is PHAT*",
+        "id": 5,
+        "text": "The Earth is PHAT**",
+        "user_id": 1,
         "post_id": 2
     },
     {
-        "text": "No comment.",
+        "id": 6,
+        "text": "pick you'reself up bye you're bootstrap snowflake",
+        "user_id": 3,
         "post_id": 3
-    } 
+    },
+    {
+        "id": 7,
+        "text": "No comment.",
+        "user_id": 1,
+        "post_id": 3
+    }
 ]
