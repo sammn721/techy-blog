@@ -58,6 +58,19 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
+router.get('/postupdate:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id);
+    const post = postData.get({ plain: true });
+    res.render('postupdate', {
+      ...post,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
+
 // Use withAuth middleware to prevent access to route
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
@@ -76,6 +89,17 @@ router.get('/dashboard', withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
+});
+
+router.get('/postpost', (req, res) => {
+  if (!req.session.logged_in) {
+    res.redirect('/login');
+    return;
+  }
+
+  res.render('postpost', {
+    logged_in: req.session.logged_in
+  });
 });
 
 router.get('/login', (req, res) => {
