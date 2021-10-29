@@ -3,7 +3,7 @@
         <div>edit post</div>
     </div>
     <div class="card-body">
-        <form class="form mx-auto" id="editForm" postid={{id}}>
+        <form class="form mx-auto" id="editPostForm" postid={{id}}>
             <div>
                 <textarea class="form-control" id="editPostTitle" rows="1">{{title}}</textarea>
             </div>
@@ -17,3 +17,6 @@
         </form>
     </div>
 </div>
+{{#if logged_in}}
+<script src='/js/postupdate.js'></script>
+{{/if}}
