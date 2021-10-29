@@ -58,11 +58,11 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
-router.get('/postupdate/:id', async (req, res) => {
+router.get('/postUpdate/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);
     const post = postData.get({ plain: true });
-    res.render('postupdate', {
+    res.render('postUpdate', {
       ...post,
       logged_in: req.session.logged_in
     });
