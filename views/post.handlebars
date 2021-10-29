@@ -1,0 +1,43 @@
+<div>
+    <div class="card mx-auto" postId={{id}}>
+        <div class="card-header">
+            <div class="h5">{{title}}</div>
+            <div>posted by {{user.name}} on {{format_date date_created}}</div>
+        </div>
+        <div class ="card-body">
+            <p class="card-text">{{text}}</p>
+        </div>
+    </div>
+    <div>
+        {{#each comments as |comment|}}
+        <div class="card mx-auto">
+            <div class="card-header">
+                <div>posted by {{comment.user.name}} {{format_date comment.date_created}}</div>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{comment.text}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{#if logged_in}}
+    <div class="card mx-auto">
+        <div class="card-header">
+            <div>new comment</div>
+        </div>
+        <div class="card-body">
+            <form class="form mx-auto">
+                <div>
+                    <textarea class="form-control" id="newComment" rows="3"></textarea>
+                </div>
+                <div class="mx-auto">
+                    <button class="btn btn-primary" type="submit">comment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {{/if}}
+</div>
+{{#if logged_in}}
+<script = src="/js/newpost.js"></script>
+{{/if}}
