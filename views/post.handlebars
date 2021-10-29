@@ -1,5 +1,5 @@
 <div>
-    <div class="card mx-auto" postId={{id}}>
+    <div class="card mx-auto" id="renderPost" postid={{id}}>
         <div class="card-header">
             <div class="h5">{{title}}</div>
             <div>posted by {{user.name}} on {{format_date date_created}}</div>
@@ -12,7 +12,7 @@
         {{#each comments as |comment|}}
         <div class="card mx-auto">
             <div class="card-header">
-                <div>posted by {{comment.user.name}} {{format_date comment.date_created}}</div>
+                <div>comment by {{comment.user.name}} on {{format_date comment.date_created}}</div>
             </div>
             <div class="card-body">
                 <p class="card-text">{{comment.text}}</p>
@@ -26,7 +26,7 @@
             <div>new comment</div>
         </div>
         <div class="card-body">
-            <form class="form mx-auto">
+            <form class="form mx-auto" id="commentForm">
                 <div>
                     <textarea class="form-control" id="newComment" rows="3"></textarea>
                 </div>
@@ -39,5 +39,5 @@
     {{/if}}
 </div>
 {{#if logged_in}}
-<script = src="/js/newpost.js"></script>
+<script src='/js/comment.js'></script>
 {{/if}}

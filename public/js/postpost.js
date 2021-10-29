@@ -2,12 +2,12 @@ const postPostHandler = async (event) => {
     event.preventDefault();
 
     const title = document.querySelector('#newPostTitle').value.trim();
-    const content = document.querySelector('#newPostText').value.trim();
+    const text = document.querySelector('#newPostText').value.trim();
 
-    if (title && content) {
+    if (title && text) {
        const response = await fetch(`/api/posts`, {
            method: 'POST',
-           body: JSON.stringify({ title, content }),
+           body: JSON.stringify({ title, text }),
            headers: {
                'Content-Type': 'application/json',
            },
@@ -15,7 +15,7 @@ const postPostHandler = async (event) => {
        if (response.ok) {
            document.location.replace(`/dashboard`);
        } else {
-           alert('failer');
+           alert('failure');
        }
     }
 }
