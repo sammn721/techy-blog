@@ -2,19 +2,19 @@
     {
         "id": 1,
         "title": "Greetings, fellow humans 👽",
-        "content": "I'd like to add you to my professional network on human Li-- I mean, LinkedIn.",
+        "text": "I'd like to add you to my professional network on human Li-- I mean, LinkedIn.",
         "user_id": 1
     },
     {
         "id": 2,
         "title": "WAKE UP 🐑",
-        "content": "The Earth is FLAT.",
+        "text": "The Earth is FLAT.",
         "user_id": 3
     },
     {
         "id": 3,
         "title": "Help us 🥲",
-        "content": "Please alien spaceperson, take all our trash to the Sun! We'll be better next time, promise!",
+        "text": "Please alien spaceperson, take all our trash to the Sun! We'll be better next time, promise!",
         "user_id": 2
     }
 ]
