@@ -1,6 +1,18 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{text}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+<div class="card mx-auto">
+  <div class="card-header">
+    <div>new post</div>
+  </div>
+  <div class="card-body">
+    <form class="form mx-auto">
+      <div>
+        <input class="form-control" type="text" id="newPostTitle" placeholder="post title" />
+      </div>
+      <div>
+        <textarea class-="form-control" id="newPostText" rows="5" placeholder="post text"></textarea>
+      </div>
+      <div class="mx-auto">
+        <button class="btn btn-primary" type="submit">post post</button>
+      </div>
+    </form>
+  </div>
 </div>
